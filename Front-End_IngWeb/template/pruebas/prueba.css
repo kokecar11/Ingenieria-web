@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Exo+2:600|Merriweather+Sans|Oswald&display=swap');
+
+body{
+	font-family: 'Exo 2', sans-serif;
+}
+  
+  .radio-button {
+    display: none;
+    float: center;
+  }
+  
+  #filter {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-label {
+    display: inline-block;
+    padding: 5px 9px;
+    margin-left:5px; 
+    text-align: center;
+    cursor: pointer;
+    background-color: #127F6A;
+    border-bottom: 3px solid rgba(246,181,17,0.9);
+    transition: 0.5s;
+  }
+  
+  .content {
+    display: none;
+    padding: 2% 30%;
+
+  }
+  
+  .filter-label:hover {
+    background: rgba(246,181,17,0.9);
+    border-bottom: 3px solid #127F6A;
+    transition: 0.5s;
+  }
+  
+  #tab1-radio:checked~#filter .tab1,
+  #tab2-radio:checked~#filter .tab2,
+  #tab3-radio:checked~#filter .tab3,
+  #tab4-radio:checked~#filter .tab4,
+  #tab5-radio:checked~#filter .tab5,
+  #tab6-radio:checked~#filter .tab6,
+  #tab7-radio:checked~#filter .tab7,
+  #tab8-radio:checked~#filter .tab8,
+  #tab9-radio:checked~#filter .tab9,
+  #tab10-radio:checked~#filter .tab10 {
+    background: rgba(246,181,17,0.9);
+    border-bottom: 3px solid #127F6A;
+    transition: 0.5s;
+  }
+.tab{
+  margin-left: -15%;
+  width: 500px;
+}
+  
+table{
+  width: 500px;
+  text-align: left;
+  background: white;
+  border-collapse: collapse;
+}
+
+  th,td{
+    padding: 15px;
+    
+  }
+
+  thead{
+    background-color: rgba(246,181,17,0.5);
+    border-bottom: 5px solid #127F6A;
+  }
+  
+  tr:nth-child(even){
+  background: rgba(246,181,17,0.5);
+  }
+  #tab1-radio:checked~main .tab1 {
+    display: block;
+  }
+  
+  #tab2-radio:checked~main .tab2 {
+    display: block;
+  }
+  
+  #tab3-radio:checked~main .tab3 {
+    display: block;
+  }
+
+  #tab4-radio:checked~main .tab4 {
+    display: block;
+  }
+  
+  #tab5-radio:checked~main .tab5 {
+    display: block;
+  }
+  
+  #tab6-radio:checked~main .tab6 {
+    display: block;
+  }
+  #tab7-radio:checked~main .tab7 {
+    display: block;
+  }
+  
+  #tab8-radio:checked~main .tab8 {
+    display: block;
+  }
+  
+  #tab9-radio:checked~main .tab9 {
+    display: block;
+  }
+
+  
+  #tab10-radio:checked~main .tab10 {
+    display: block;
+  }

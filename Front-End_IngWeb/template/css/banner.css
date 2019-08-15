@@ -1,0 +1,82 @@
+#banner{
+    margin-top: 1px;
+    position: relative;
+}
+
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+
+#banner h2{
+    font-size: 28px;
+}
+
+#banner a{
+    display: block;
+    width: 120px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+    background: rgba(18,127,106, 0.4);
+}
+
+#banner a:hover{
+    background: rgba(246,181,17,0.4);
+    transition: 0.5s;
+}
+
+/* slider */
+#banner .banner-slider {
+    width: 100%;
+
+	margin: auto;
+	overflow: hidden;
+}
+.banner-slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	animation: cambio 15s infinite alternate ease-in;
+}
+
+.banner-slider li {
+    width: 100%; 
+	list-style: none;
+}
+
+.banner-slider img {
+    width: 100%;
+	display:block;
+    margin:auto;
+}
+
+/* funcion del slider*/
+
+@keyframes cambio {
+	0%{margin-left: 0;}
+	30%{margin-left: 0;}
+
+	35%{margin-left: -100%;}
+	65%{margin-left: -100%;}
+
+	70%{margin-left: -200%;}
+	100%{margin-left: -200%;}
+}
+
+@media(min-width:768px){
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    #banner img{
+        height: auto;
+        margin-top: -100px;
+    }
+}
